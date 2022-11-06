@@ -20,14 +20,19 @@ module.exports = {
         primary: "#F9B200",
         secondary: "#E1E4EA",
         radioMuted: "#B1B3B6",
-        radioColored: "#21409A"
+        radioColored: "#21409A",
+        textSemiMuted: "#5F6369"
       },
       fontSize: {
         "3.25xl": "2rem"
       },
       spacing: {
+        7.5: "1.875rem",
         8.5: "2.125rem",
-        13: "3.25rem"
+        13: "3.25rem",
+        30: "7.5rem",
+        47.5: "11.875rem",
+        60.5: "15.125rem",
       }
     },
   },

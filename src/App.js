@@ -33,10 +33,11 @@ function App() {
   }
   return (
     <div className="search-flight container">
+
       <div className='grid grid-cols-2'>
         {
           tabValues.map((tab, index) => (
-            <div className={`h-20 flex justify-center items-center cursor-pointer ${tab.selected ? "bg-primary" : "bg-secondary"}`} key={index} onClick={() => handleTabChange(tab)}>
+            <div className={`h-20 flex justify-center items-center cursor-pointer ${tab.selected ? "bg-primary" : "bg-secondary"} ${tabValues.length -1 != index ? "rounded-tl-lg" : "rounded-tr-lg"}`} key={index} onClick={() => handleTabChange(tab)}>
               <p className='text-3.25xl text-white font-bold'>{tab.name}</p>
             </div>
           ))
