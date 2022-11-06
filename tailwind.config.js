@@ -18,10 +18,16 @@ module.exports = {
     extend: {
       colors: {
         primary: "#F9B200",
-        secondary: "#E1E4EA"
+        secondary: "#E1E4EA",
+        radioMuted: "#B1B3B6",
+        radioColored: "#21409A"
       },
       fontSize: {
         "3.25xl": "2rem"
+      },
+      spacing: {
+        8.5: "2.125rem",
+        13: "3.25rem"
       }
     },
   },
