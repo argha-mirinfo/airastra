@@ -42,7 +42,7 @@ const FlightSearchForm = () => {
         setSelectedTripType(trip.index)
     }
 
-    const handleFromAirportDropDown = (dropDownRef, motherRef, type) => {
+    const handleDropDown = (dropDownRef, motherRef, type) => {
         function handleClickOutside(event) {
             if (
                 motherRef.current &&
@@ -61,8 +61,8 @@ const FlightSearchForm = () => {
         document.addEventListener("mousedown", handleClickOutside);
     };
 
-    handleFromAirportDropDown(formAirportDropDown, fromAriport, "from");
-    handleFromAirportDropDown(toAirportDropDown, toAriport, "to");
+    handleDropDown(formAirportDropDown, fromAriport, "from");
+    handleDropDown(toAirportDropDown, toAriport, "to");
 
     const handleFromAirportDD = (event) => {
         event.stopPropagation()
